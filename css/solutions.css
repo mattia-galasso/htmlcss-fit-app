@@ -19,8 +19,12 @@
     color: white;
 }
 
+.stats-grid {
+    transition: transform 0.3s ease;
+}
+
 .stats-grid:hover {
-    transform: scale(105%);
+    transform: translateY(5px);
     box-shadow: 5px 5px 6px rgba(58, 58, 58, 0.3);
 }
 
@@ -39,34 +43,68 @@
     background-color: #f0fff4;
 }
 
-div[class="exercise-item"]:nth-child(even)::before {
+.exercise-item:nth-child(even)::before {
     content: "⚡";
 }
 
+.goals-container input, select {
+    transition: border 0.3s linear, box-shadow 0.3s linear;
+}
+
 .goals-container input:focus, select:focus {
+    outline: none;
     border: 1px rgb(25, 25, 255) solid;
     box-shadow: 0px 0px 6px 1px rgba(25, 25, 255, 0.3);
 }
 
+.goals-container .save-btn {
+    transition: transform 0.5s ease, background-color 0.6s linear;
+}
+
 .goals-container .save-btn:hover {
-    transform: scale(102%);
-    background-color: #556fe4;
+    transform: translateY(5px);
+    background-color: #3453e0;
     box-shadow: 0px 0px 6px 3px rgba(25, 25, 255, 0.3);
 }
 
 .progress-bar .progress-fill::before {
     content: "65%";
-    text-align: right;
-    font-size: 5px;
-    color: white;
+    position: absolute;
+    font-weight: bold;
+    top: 5px;
+    right: 1px;
+    font-size: 10px;
+    color: #ffffff;
+    translate: -50% -50%;
+}
+
+.nav-footer .nav-item {
+    transition: background-color 0.4s linear, color 0.4s linear;
 }
 
 .nav-footer .nav-item:hover {
-    background-color: #628db8;
-    color: rgb(59, 59, 143);
+    background-color: #34495e;
+    color: #667eea;
 }
 
 .nav-footer a:first-child {
-    background-color: #628db8;
-    color: rgb(59, 59, 143);
+    background-color: #34495e;
+    color: #667eea;
+}
+
+.quote-box::before {
+    content: "''";
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    font-size: 50px;
+    color: #96a1eb;
+}
+.quote-box::after {
+    content: "''";
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    font-size: 50px;
+    color: #9e86c5;
 }
