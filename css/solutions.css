@@ -23,3 +23,8 @@
     transform: scale(105%);
     box-shadow: 5px 5px 6px rgba(58, 58, 58, 0.3);
 }
+
+.workout-section article:nth-child(3) {
+    border-left: 5px solid #ffa500;
+    background-color: #fff8ba;
+}
