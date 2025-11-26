@@ -28,3 +28,17 @@
     border-left: 5px solid #ffa500;
     background-color: #fff8ba;
 }
+
+.exercise-item:first-child {
+    border-color: green;
+    background-color: #f0fff4;
+}
+
+.exercise-item:last-child {
+    border-color: green;
+    background-color: #f0fff4;
+}
+
+div[class="exercise-item"]:nth-child(even)::before {
+    content: "⚡";
+}
