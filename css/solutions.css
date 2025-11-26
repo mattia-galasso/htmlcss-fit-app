@@ -2,3 +2,19 @@
     content: "🔥";
     font-size: 2rem;
 }
+
+.stats-grid:last-child {
+    background-image: linear-gradient(
+        to right,
+        #4b57fd,
+        #9900ff
+    );
+}
+
+.stats-grid:last-child .stat-number {
+    color: white;
+}
+
+.stats-grid:last-child .stat-label {
+    color: white;
+}
